@@ -5,6 +5,5 @@ Rails.application.routes.draw do
   resources :articles
   resources :categories
   devise_for :users
-  # resource :welcome, only: index
   root to: 'welcome#home'
 end

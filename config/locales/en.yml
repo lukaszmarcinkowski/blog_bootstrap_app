@@ -1,3 +1,8 @@
 en:
   hello: "Hello world"
+  app_name: Blog App
   read_more: Read more
+  categories : Categories
+  title: Title
+  category: Category
+  articles: Articles
