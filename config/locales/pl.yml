@@ -1,0 +1,10 @@
+pl:
+  hello: "Hello world"
+  app_name: Blog App
+  read_more: Czytaj więcej
+  categories : Kategorie
+  title: Tytuł
+  category: Kategoria
+  articles: Artykuły
+  logout: Wyloguj
+  language: Język
