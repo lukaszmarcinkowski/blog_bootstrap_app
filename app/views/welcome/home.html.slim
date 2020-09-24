@@ -1,0 +1,12 @@
+.jumbotron
+  .container
+    h1.display-3 This is my blog about programming
+    p I hope You will enjoy reading this
+    p = link_to t('read_more'), articles_path, class: 'btn btn-primary btn-lg'
+.container
+  .row
+    - @articles.each do |article|
+      .col.col-md-4
+        h2 = article.title
+        p = article.body
+        p = link_to t('read_more'), article_path(article), class: 'btn btn-secondary'
