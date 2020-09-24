@@ -2,15 +2,18 @@ nav.nav-bar.navbar-expand-md.navbar-dark.fixed-top.bg-dark
   .collapse.navbar-collapse
     ul.navbar-nav.mr-auto
       li.nav-item
-        = link_to t('app_name'), root_path, class: 'nav-link'
+        = link_to t('navbar.app_name'), root_path, class: 'nav-link'
       li.nav-item
-        = link_to t('articles'), articles_path, class: 'nav-link'
-      li.nav-item
-        = link_to t('categories'), categories_path, class: 'nav-link'
+        = link_to t('navbar.articles'), articles_path, class: 'nav-link'
+      - if user_signed_in?
+        li.nav-item
+          = link_to t('navbar.categories'), categories_path, class: 'nav-link'
       li.nav-item.dropdown
-        a.nav-link.dropdown-toggle href="#" id="dropDown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" = t('language')
+        a.nav-link.dropdown-toggle href="#" id="dropDown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" = t('navbar.language')
         .dropdown-menu aria-labbeledby="dropDown01"
           = link_to 'Polski', root_path(locale: :pl), class: 'dropdown-item'
           = link_to 'English', root_path(locale: :en), class: 'dropdown-item'
       - if user_signed_in?
-        = link_to t('logout'), destroy_user_session_path, method: :delete, class: 'nav-link'
+        = link_to t('navbar.logout'), destroy_user_session_path, method: :delete, class: 'nav-link'
+      - else
+        = link_to t('navbar.login'), new_user_session_path, class: 'nav-link'

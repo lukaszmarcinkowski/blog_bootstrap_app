@@ -1,10 +1,16 @@
 en:
-  hello: "Hello world"
-  app_name: Blog App
+  welcome:
+    intro_1: This is my blog about programing
+    intro_2: I hope You will enjoy reading this
+  articles:
+  navbar:
+    app_name: Blog App
+    categories : Categories
+    articles: Articles
+    login: Sign in
+    logout: Logout
+    language: Language
   read_more: Read more
-  categories : Categories
-  title: Title
   category: Category
-  articles: Articles
-  logout: Logout
-  language: Language
+  title: Title
+
