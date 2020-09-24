@@ -72,7 +72,7 @@ Please note that RVM is incompatible with rbenv and they can not be isntalled to
         * Listening on tcp://[::1]:3000
         Use Ctrl-C to stop
     
-urther development
+Further development
 -------------------
 **Git branching model**
 
