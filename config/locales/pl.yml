@@ -1,0 +1,15 @@
+pl:
+  welcome:
+    intro_1: To jest mój blog o programowaniu
+    intro_2: Mam nadzieję, że Ci się spodoba
+  articles:
+  navbar:
+    app_name: Blog App
+    articles: Artykuły
+    categories : Kategorie
+    login: Zaloguj
+    logout: Wyloguj
+    language: Język
+  read_more: Czytaj więcej
+  title: Tytuł
+  category: Kategoria

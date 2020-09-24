@@ -1,7 +1,7 @@
 .jumbotron
   .container
-    h1.display-3 This is my blog about programming
-    p I hope You will enjoy reading this
+    h1.display-3 = t('welcome.intro_1')
+    p = t('welcome.intro_2')
     p = link_to t('read_more'), articles_path, class: 'btn btn-primary btn-lg'
 .container
   .row
